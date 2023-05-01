@@ -1,0 +1,48 @@
+/****************************************
+* サイドバー
+**************************************** */
+
+aside{
+    position:fixed;
+    top: var(--YT-HEADER-HIGHT);
+    bottom: 0;
+    width: var(--YT-SIDEBAR-WIDTH);
+    /* background-color:darkkhaki; */
+}
+
+aside ul{
+    padding-left: 0;
+}
+
+aside ul li{
+    list-style: none;
+}
+
+aside ul li a{
+    display: block;
+    text-align: center;
+    padding: 17px 0;
+    text-decoration: none;
+}
+
+aside ul li a:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+aside ul li a .label{
+    padding-top: 2px;
+    color: black;
+    font-size: 10px;
+}
+aside ul li img{
+    width:20px;
+}
+
+/* スマホサイズの場合 */
+@media screen and (max-width: 480px) {
+    aside {
+        /* スマホの場合はサイドバーを削除 */
+        display: none;
+    }
+}

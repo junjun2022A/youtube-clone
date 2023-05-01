@@ -1,0 +1,85 @@
+/****************************************
+* ヘッダー
+**************************************** */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--YT-HEADER-HIGHT);
+    padding: 0 20px;
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 480px){
+    header{
+     border-bottom: 1px solid gainsboro;
+     box-shadow: 0px 3px 3px gainsboro;
+    }
+}
+
+
+
+
+header .icons-left{
+    /* background-color: darksalmon; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: left;
+}
+header .search-bar{
+    /* background-color: darkturquoise; */
+    width: 728px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .search-bar input {
+    height: 35.5px;
+    border: 1px solid gainsboro;
+    border-right: 0;
+    /* flex: 成長率 縮小率 幅 */
+    /* flex: 1 1 auto */
+    flex: 1;
+    /* 左上｜右上｜右下｜左下 */
+    border-radius: 40px 0 0 40px;
+    /* 上下｜左右 */
+    padding: 0 15px;
+    /* 内側｜横軸｜縦軸｜色 */
+    box-shadow: inset 0 1px 2px #eee;
+
+}
+
+header .search-bar button.search{
+    border-radius: 0 40px 40px 0;
+    border: 1px solid gainsboro;
+    height: 37.5px;
+    padding: 0 30px ;
+    background-color: whitesmoke;
+}
+
+
+header .icons-right{
+    /* background-color:hotpink; */
+    width: 200px;
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    gap: 30px;
+    padding-right: 10px;
+}
+
+header .icons-right .profile-icon {
+    cursor: pointer;
+  }

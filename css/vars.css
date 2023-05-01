@@ -1,0 +1,21 @@
+/****************************************
+* 変数の定義
+**************************************** */
+
+:root {
+    /* サイズ指定 */
+    --YT-HEADER-HIGHT: 56px;
+    --YT-SIDEBAR-WIDTH: 72px;
+}
+
+    /* スマホサイズの場合の指定 */
+    @media screen and (max-width: 480px) {
+        :root{
+            /* サイズ指定 */
+    --YT-HEADER-HIGHT: 48px;
+    --YT-SIDEBAR-WIDTH: 0px;
+
+
+    }
+
+    }
